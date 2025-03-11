@@ -8,4 +8,4 @@ to register a model do the following
 """
 from . models import Topic, Entry
 admin.site.register(Topic)
-admin.site.register(Entry)~
+admin.site.register(Entry)

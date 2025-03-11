@@ -35,5 +35,31 @@ after creating superuser( python manage.py createsuperuser) now you need to regi
 model with the admin site
 
 
+
+
+The Django Shelldjango has a shell(Interactive terminal session) we can examine data programmatically
+
+usage python manage.py shell
+
+
+
+MAKING PAGES: The Learning Log Home Page
+
+making web page in django consists three stages
+1.defining URLS
+2 writing vies
+3. writing templates
+
+NOTE: You can do the above in any order, but for this project I will follow the above
+
+we'll start by defining a URL pattern - describes how url is laid out. also
+tells django what to look for when matching a browser request with site URL so it know which 
+page to return
+
+
+each url then maps to a particular view - view function retrieves and processes data need for the page
+
+view function often renders the page using template, which contains overall structure of the page
+
 """
 
