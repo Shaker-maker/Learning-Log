@@ -29,6 +29,7 @@ ALLOWED_HOSTS = []
 
 
 # Application definition
+# activating models - we have to include our app in the overall project
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -37,6 +38,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    # My apps - grouping them to keep track of them as project grows
+    'learning_logs',
+    
 ]
 
 MIDDLEWARE = [
