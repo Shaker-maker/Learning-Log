@@ -16,6 +16,7 @@ Installation and Setup
 1. Clone the Repository
 
 git clone https://github.com/shaker-maker/learning-log.git
+
 cd learning-log
 
 2. Create a Virtual Environment (Optional but Recommended)
