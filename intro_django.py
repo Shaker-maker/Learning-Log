@@ -26,5 +26,14 @@ journal entries as they learn about each topic. The learning log Home page will 
 
 whenever you create a new model make migrtations to the database to tell Django
 to modify the db to store info related to the model
+
+
+The Django Admin Site - makes it easy to work with our models
+here we will set a superuser - a user who has all privileges available on the site
+
+after creating superuser( python manage.py createsuperuser) now you need to register 
+model with the admin site
+
+
 """
 

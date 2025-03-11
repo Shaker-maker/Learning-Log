@@ -24,4 +24,22 @@ class Topic(models.Model):
         return self.text
     
 """
+Defining our Entry model
+for users to record what they've been learning, we need to define a model for the kind
+of entries users can make in their learning logs
+
+each entry needs to be  associated to a particular topic(many-to-one relationship)
 """
+
+class Entry(models.Model):
+    """Something specific learnt about the topic"""
+    topic = models.ForeignKey(Topic, on_delete=models.CASCADE)
+    text = models.TextField()
+    date_added = models.DateTimeField(auto_now_add=True)
+
+
+    class Meta:
+        verbose_name_plural = 'entries'
+
+    def __str__(self):
+        return f"{self.text[:50]}......"
