@@ -1,4 +1,4 @@
-"""
+
 Django is a web framework - a set of tools that help you build interactive websites
 
 build a project called learning log - an online journal system that lets you kee
@@ -61,5 +61,42 @@ each url then maps to a particular view - view function retrieves and processes 
 
 view function often renders the page using template, which contains overall structure of the page
 
-"""
+
+
+BUILDING ADDITIONAL PAGES
+I will build two pages that display data
+1. a page that lists all the topics
+2. a page that shows all the entries for a a particular topic
+
+i will specify the URL pattern, write a view function and template for each page
+
+first we willl build a base template where all templates in the project can inherit from
+
+parent template - base.html - will contain all the elements common to all pages
+
+
+
+Individual topic pages - they will focus on an individual topic
+it will show its name and all its entries
+
+we will definr the URL patterr, write views and create template
+
+also modify the topics page so that each item in the bulleed list links to its correspondong topic page
+
+
+The Topic URL Pattern
+
+it will use the topic id attribute to indicate which topiv was requested
+
+
+
+PART 2 USER ACCOUNTS
+
+Allowing Users to Enter  their own Data- we will give them ability to add A
+- new topic
+- new entry
+- edit previous entries
+
+
+to do this we will use Django's form building tools that allow users t enter data
 
