@@ -100,3 +100,14 @@ Allowing Users to Enter  their own Data- we will give them ability to add A
 
 to do this we will use Django's form building tools that allow users t enter data
 
+
+Adding new topic - adding a orm-based page works in much same way as the pages we've built
+
+the major difference is the addition of a new module called forms.py, which will contain forms
+
+
+
+The Topic ModelForm
+simplest way to build a form in Django is to use a ModelForm- which uses the infor from the models we defined
+to automatically build a form
+forms.py should be in same dir as models.py
