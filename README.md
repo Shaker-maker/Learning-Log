@@ -15,26 +15,26 @@ Tech Stack
 Installation and Setup
 1. Clone the Repository
 
-git clone https://github.com/shaker-maker/learning-log.git
+    git clone https://github.com/shaker-maker/learning-log.git
 
-cd learning-log
+    cd learning-log
 
 2. Create a Virtual Environment (Optional but Recommended)
 
-python -m venv env
-source env/bin/activate  # On Windows, use `env\Scripts\activate`
+    python -m venv env
+    source env/bin/activate  # On Windows, use `env\Scripts\activate`
 
 3. Install Dependencies
 
-pip install -r requirements.txt
+    pip install -r requirements.txt
 
 4. Apply Migrations
 
-python manage.py migrate
+    python manage.py migrate
 
 5. Run the Development Server
 
-python manage.py runserver
+    python manage.py runserver
 
 Visit http://127.0.0.1:8000/ in your browser.
 Usage
