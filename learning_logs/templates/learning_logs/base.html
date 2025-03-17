@@ -1,6 +1,19 @@
 <p>
     <a href="{% url 'learning_logs:index' %}">Learning Log</a> - 
     <a href="{% url 'learning_logs:topics' %}">Topics</a>
+    <!--
+    we link login template in this file , but we don't want it to display when the
+    user is already logged in, nest inside if tag
+    -->
+
+    {% if user.is_authenticated %}
+        Hello, {{user.username}}.
+        <a href="{% url 'users:logout' %}">Log out</a>
+    {% else %}
+        <a href="{% url 'users:login' %}">Log in</a>
+        
+
+    {% endif %}
 </p>
 
 {% block content %}{% endblock content %}
