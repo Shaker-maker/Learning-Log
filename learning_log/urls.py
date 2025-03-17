@@ -21,4 +21,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     # include all our app urls i.e learning_logs
     path('', include('learning_logs.urls')),
+    # include all URLS from users
+    path('users/', include('users.urls')),
 ]

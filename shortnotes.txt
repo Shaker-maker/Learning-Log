@@ -111,3 +111,13 @@ The Topic ModelForm
 simplest way to build a form in Django is to use a ModelForm- which uses the infor from the models we defined
 to automatically build a form
 forms.py should be in same dir as models.py
+
+
+
+APP NO 2 
+SETTING UP USERS ACCOUNTS
+I will setup a user registration and authorization system so people can register an account 
+log in adn out
+
+I will use django default user authentication system and modify topic model slightly 
+so evry topic belongs to a certain user

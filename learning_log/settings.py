@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     # My apps - grouping them to keep track of them as project grows
     'learning_logs',
+    'users',
     
 ]
 
