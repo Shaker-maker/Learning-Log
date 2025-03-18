@@ -2,6 +2,9 @@ from django.shortcuts import render, redirect
 # import the model associated with the data needed
 from . models import Topic, Entry
 from . forms import TopicForm, EntryForm
+# allowing users to own their data
+from django.contrib.auth.decorators import login_required
+
 # render function - renders response based on  the data provided in the views
 
 # Create your views here.
