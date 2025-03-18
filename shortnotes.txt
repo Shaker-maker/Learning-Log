@@ -121,3 +121,26 @@ log in adn out
 
 I will use django default user authentication system and modify topic model slightly 
 so evry topic belongs to a certain user
+
+
+Allowing users to own their data
+-users should be able to enter data exclusive to them
+- restrict access to certain pages so users can work with only their data
+
+we will achieve the above by modifying topic model, making sure each topic belongs to a specific user
+
+
+
+Connecting data to certain Users
+connect data highest in hierarchy to user and the lower-level data will follow
+
+well do this my modifying topic model - ading a foreign key relationship to a user
+and migrate the database
+
+- modify some of the views so they only show the data associated with current logged in user
+
+modifying the tOPIC MODEL
+
+Restricting Topics Access to Appropriate Users
+
+
